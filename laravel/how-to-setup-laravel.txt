@@ -1,0 +1,23 @@
+fora do container:
+
+git clone https://github.com/laravel/laravel.git laravel
+
+cp .env.example .env
+
+
+dentro do container:
+
+composer update
+
+composer dump-autoload
+
+php artisan key:generate
+
+php artisan --version
+
+php -v
+
+
+fora do container:
+
+sudo chown -R www-data:$USER laravel/
